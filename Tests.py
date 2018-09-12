@@ -1,6 +1,7 @@
 from Driver import AppiumDriverSetup
 from YellowInterviewMainPage import LoginScreen
 import unittest
+import HtmlTestRunner
 
 
 class YellowInterviewTests(unittest.TestCase):
@@ -27,4 +28,5 @@ class YellowInterviewTests(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(YellowInterviewTests)
     unittest.TextTestRunner(verbosity=2).run(suite)
+	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='HTML-Reports'))
 

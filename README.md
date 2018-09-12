@@ -1,5 +1,11 @@
 # appium-python-pom
 
+### pre-install
+
+* pip install Appium-Python-Client
+
+* pip install html-testRunner
+
 ### Description
 
 That project will run on Android emulator instead of real device
